@@ -5,12 +5,13 @@
   --main-text-color: #434455;
   --alternative-white-color: #f4f4fd;
   --accent-white-color: #e7e9fc;
+  --white-color: #ffffff;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   color: var(--main-text-color);
-  background-color: #ffffff;
+  background-color: var(--white-color);
 }
 .link {
   text-decoration: none;
@@ -32,7 +33,7 @@ body {
   text-decoration: none;
 }
 
-.header-logo span {
+.header-logo-span {
   color: var(--main-header-color);
 }
 
@@ -78,7 +79,7 @@ body {
 }
 
 .welcome-btn {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -165,19 +166,18 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-brand-color);
 }
 
-.footer-logo span {
+.footer-logo-span {
   color: var(--alternative-white-color);
 }
 
 /*----------PORTFOLIO FILTER--------------*/
 .filter-list-btn {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
