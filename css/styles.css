@@ -126,7 +126,7 @@ body {
   color: var(--main-header-color);
 }
 
-/*------------OURTEAM------------------*/
+/*------------OUR TEAM------------------*/
 .team {
   background-color: var(--alternative-white-color);
 }
@@ -134,6 +134,11 @@ body {
 .team-list {
   background-color: var(--white-color);
 }
+
+.team-list-item {
+  background-color: var(--white-color);
+}
+
 .team-title {
   font-weight: 700;
   font-size: 36px;
