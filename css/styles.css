@@ -145,8 +145,8 @@ body {
   line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
-  text-transform: capitalize;
   color: var(--main-header-color);
+  text-transform: capitalize;
 }
 
 .team-list-item-subtitle {
