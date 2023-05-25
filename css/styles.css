@@ -21,6 +21,9 @@ body {
 }
 
 /*-----------HEADER--------------*/
+.header-address {
+  font-style: normal;
+}
 
 .header-logo {
   font-family: "Raleway", sans-serif;
@@ -83,8 +86,10 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.04em;
   color: #ffffff;
   background-color: var(--primary-brand-color);
+  cursor: pointer;
 }
 
 .welcome-btn:hover,
@@ -94,11 +99,12 @@ body {
 
 /*----------------BENEFITS--------------*/
 
-.benefits-list-header {
+.benefits-list-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  color: var(--main-header-color);
 }
 
 .benefits-list-text {
@@ -117,11 +123,16 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  color: var(--main-header-color);
 }
 
 /*------------OURTEAM------------------*/
 .team {
   background-color: var(--alternative-white-color);
+}
+
+.team-list {
+  background-color: var(--white-color);
 }
 .team-title {
   font-weight: 700;
@@ -130,6 +141,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  color: var(--main-header-color);
 }
 
 .team-list-item-subtitle {
@@ -192,7 +204,7 @@ body {
 .filter-list-btn:hover,
 .filter-list-btn:focus {
   color: #ffffff;
-  background-color: var(--primary-state-color);
+  background-color: var(--pressed-state-color);
 }
 
 /*------------PORTFOLIO PROJECTS---------------*/
