@@ -121,7 +121,7 @@ img {
 
 /*------------WELCOME SECTION--------------*/
 .welcome {
-  padding-bottom: 120px;
+  padding: 188px 0;
 }
 
 .welcome-container {
@@ -256,7 +256,7 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--main-header-color);
-  padding-top: 32px;
+  text-align: center;
   margin-bottom: 8px;
 }
 
@@ -266,10 +266,11 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
-  padding-bottom: 32px;
+  text-align: center;
 }
 
 .team-member {
+  padding: 32px 16px;
 }
 
 /*-------------------FOOTER----------------*/
@@ -302,6 +303,9 @@ img {
   display: flex;
   margin-top: 100px;
   margin-bottom: 16px;
+}
+
+.footer-logo .link {
   display: inline-block;
 }
 
@@ -361,10 +365,7 @@ img {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--main-header-color);
-  margin-top: 32px;
   margin-bottom: 8px;
-  padding-left: 16px;
 }
 
 .projects-list-text {
@@ -372,10 +373,14 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
-  margin-bottom: 32px;
-  padding-left: 16px;
 }
 
 .projects-list-item {
-  border: 1px solid #e7e9fc;
+  margin-bottom: 72px;
+}
+
+.project-item-container {
+  padding: 32px 16px;
+  border: 1px solid var(--alternative-white-color);
+  border-top: none;
 }
