@@ -34,17 +34,6 @@ h6 {
   margin-bottom: 0;
 }
 
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style-type: none;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-}
-
 img {
   display: block;
 }
@@ -59,8 +48,9 @@ img {
 
 /*-----------HEADER--------------*/
 .page-header {
-  padding-top: 24;
+  padding-top: 24px;
   padding-bottom: 24px;
+  border-bottom: 1px solid #e7e9fc;
 }
 .header-container {
   display: flex;
@@ -136,7 +126,7 @@ img {
 
 .welcome-container {
   background-color: var(--main-header-color);
-  padding: 188px 316px;
+  padding: 188px 0;
 }
 
 .welcome-title {
@@ -165,6 +155,7 @@ img {
   border: none;
   padding: 16px 32px;
   margin: 0 auto;
+  min-width: 169px;
 }
 
 .welcome-btn:hover,
@@ -174,20 +165,23 @@ img {
 
 /*----------------BENEFITS--------------*/
 .benefits {
-  padding-bottom: 120px;
+  padding: 120px 0;
 }
 .benefits-list {
   display: flex;
   gap: 24px;
 }
 
+.benefits-list-item {
+  width: calc((100% - 72px) / 4);
+}
 .benefits-list-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--main-header-color);
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .benefits-list-text {
@@ -218,8 +212,13 @@ img {
   gap: 24px;
 }
 
+.aboutus-list-item {
+  width: calc((100% - 48px) / 3);
+}
+
 /*------------OUR TEAM------------------*/
 .team {
+  padding: 120px 0;
 }
 
 .team-container {
@@ -235,6 +234,8 @@ img {
 
 .team-list-item {
   background-color: var(--white-color);
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-title {
@@ -268,7 +269,13 @@ img {
   padding-bottom: 32px;
 }
 
+.team-member {
+}
+
 /*-------------------FOOTER----------------*/
+.page-footer {
+  padding: 100px 0;
+}
 .footer-container {
   background-color: var(--main-header-color);
   display: flex;
@@ -294,7 +301,8 @@ img {
   color: var(--primary-brand-color);
   display: flex;
   margin-top: 100px;
-  margin-bottom: 6px;
+  margin-bottom: 16px;
+  display: inline-block;
 }
 
 .footer-logo-span {
@@ -335,6 +343,7 @@ img {
 .filter-list-btn:focus {
   color: var(--white-color);
   background-color: var(--pressed-state-color);
+  border: 1px solid transparent;
 }
 
 /*------------PORTFOLIO PROJECTS---------------*/
