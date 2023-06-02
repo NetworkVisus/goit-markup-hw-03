@@ -18,11 +18,65 @@ body {
 }
 .list {
   list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 100%;
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 /*-----------HEADER--------------*/
+.page-header {
+  padding-top: 24;
+  padding-bottom: 24px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
 .header-address {
   font-style: normal;
+  display: flex;
+  align-items: center;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
 }
 
 .header-logo {
@@ -34,6 +88,15 @@ body {
   text-transform: uppercase;
   color: var(--primary-brand-color);
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-right: 76px;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .header-logo-span {
@@ -59,7 +122,6 @@ body {
 .header-menu-link:hover,
 .header-menu-link:focus {
   color: var(--pressed-state-color);
-  text-decoration: underline;
 }
 
 .header-address-link:hover,
@@ -69,7 +131,12 @@ body {
 
 /*------------WELCOME SECTION--------------*/
 .welcome {
+  padding-bottom: 120px;
+}
+
+.welcome-container {
   background-color: var(--main-header-color);
+  padding: 188px 316px;
 }
 
 .welcome-title {
@@ -78,7 +145,10 @@ body {
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: var(--white-color);
+  max-width: 496px;
+  margin: 0 auto;
+  margin-bottom: 48px;
 }
 
 .welcome-btn {
@@ -87,9 +157,14 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #ffffff;
+  color: var(--white-color);
   background-color: var(--primary-brand-color);
   cursor: pointer;
+  display: block;
+  border-radius: 4px;
+  border: none;
+  padding: 16px 32px;
+  margin: 0 auto;
 }
 
 .welcome-btn:hover,
@@ -98,6 +173,13 @@ body {
 }
 
 /*----------------BENEFITS--------------*/
+.benefits {
+  padding-bottom: 120px;
+}
+.benefits-list {
+  display: flex;
+  gap: 24px;
+}
 
 .benefits-list-title {
   font-weight: 500;
@@ -105,6 +187,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--main-header-color);
+  padding-bottom: 8px;
 }
 
 .benefits-list-text {
@@ -112,10 +195,13 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+  max-width: 264;
 }
 
 /*----------ABOUT US------------*/
-
+.aboutus {
+  padding-bottom: 120px;
+}
 .aboutus-title {
   font-weight: 700;
   font-size: 36px;
@@ -124,15 +210,27 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--main-header-color);
+  margin-bottom: 72px;
+}
+
+.aboutus-list {
+  display: flex;
+  gap: 24px;
 }
 
 /*------------OUR TEAM------------------*/
 .team {
+}
+
+.team-container {
   background-color: var(--alternative-white-color);
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .team-list {
-  background-color: var(--white-color);
+  display: flex;
+  gap: 24px;
 }
 
 .team-list-item {
@@ -147,6 +245,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--main-header-color);
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 .team-list-item-subtitle {
@@ -156,6 +255,8 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--main-header-color);
+  padding-top: 32px;
+  margin-bottom: 8px;
 }
 
 .team-list-item-text {
@@ -164,18 +265,22 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+  padding-bottom: 32px;
 }
 
 /*-------------------FOOTER----------------*/
-
-.page-footer {
+.footer-container {
   background-color: var(--main-header-color);
+  display: flex;
+  flex-direction: column;
 }
 .footer-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--alternative-white-color);
+  max-width: 264px;
+  margin-bottom: 100px;
 }
 
 .footer-logo {
@@ -187,6 +292,9 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-brand-color);
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 6px;
 }
 
 .footer-logo-span {
@@ -194,6 +302,19 @@ body {
 }
 
 /*----------PORTFOLIO FILTER--------------*/
+.portfolio-projects {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.portfolio-filter-list {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 72px;
+}
+
 .filter-list-btn {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -205,21 +326,36 @@ body {
   background-color: var(--alternative-white-color);
   border: 1px solid var(--accent-white-color);
   cursor: pointer;
+  padding: 12px 24px;
+  border-radius: 4px;
+  border: 1px solid #e7e9fc;
 }
 
 .filter-list-btn:hover,
 .filter-list-btn:focus {
-  color: #ffffff;
+  color: var(--white-color);
   background-color: var(--pressed-state-color);
 }
 
 /*------------PORTFOLIO PROJECTS---------------*/
+
+.portfolio-projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+  justify-content: center;
+}
+
 .projects-list-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--main-header-color);
+  margin-top: 32px;
+  margin-bottom: 8px;
+  padding-left: 16px;
 }
 
 .projects-list-text {
@@ -227,4 +363,10 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+  margin-bottom: 32px;
+  padding-left: 16px;
+}
+
+.projects-list-item {
+  border: 1px solid #e7e9fc;
 }
